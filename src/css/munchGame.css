@@ -41,6 +41,7 @@ html, body {
   .playerLevel {
     font-family: "Almendra SC";
     font-size: 40px;
+    text-align: center;
     color: black;
     background: transparent !important;
     position: absolute !important;
@@ -52,12 +53,12 @@ html, body {
 
   .gearScore {
     font-family: "Almendra SC";
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     background: transparent !important;
     position: absolute !important;
     top: 17% !important;
-    left: 2% !important;
+    left: 3% !important;
     text-align: center;
     text-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #164f29,
         0 0 15px #164f29, 0 0 20px #164f29, 0 0 25px #164f29, 0 0 30px #164f29;
@@ -132,6 +133,25 @@ html, body {
   width: 15%;
   top: 25% !important;
   right:20% !important;
+  font-size: 175% !important;
+  color: black !important;
+  border-radius: 3px solid transparant;
+  box-shadow: 
+  0 2px 4px #fff, /*bottom external highlight*/
+  0 -2px 2px #666, /*top external shadow*/ 
+  inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/ 
+  inset 0 1px 1px rgba(255,255,255,0.8)!important;/*top internal highlight*/
+  }
+
+  .nextTurn{
+  font-family: "Almendra SC" !important;
+  position: absolute !important;
+  background-color: rgba(74, 103, 83, 0.872) !important;
+  text-align: center !important;
+  height: 7%;
+  width: 10%;
+  bottom: 5% !important;
+  right:5% !important;
   font-size: 175% !important;
   color: black !important;
   border-radius: 3px solid transparant;

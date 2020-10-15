@@ -5,12 +5,12 @@ class PlayerHand extends Component {
     render() {
         return(
             <div>
-            <div className = "handSizeColouring handOne" />
-            <div className = "handSizeColouring handTwo" />
-            <div className = "handSizeColouring handThree" />
-            <div className = "handSizeColouring handFour" />
-            <div className = "handSizeColouring handFive" />
-            <div className = "handSizeColouring handSix" />
+            <div className = "handSizeColouring handOne"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
+            <div className = "handSizeColouring handTwo"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
+            <div className = "handSizeColouring handThree"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
+            <div className = "handSizeColouring handFour"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
+            <div className = "handSizeColouring handFive"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
+            <div className = "handSizeColouring handSix"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
             <div className = "handSizeColouring handSeven"><img src={require("../../images/frontBackground.jpg")} alt="" className='imageHolder'/></div>
             </div>
         );

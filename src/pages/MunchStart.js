@@ -65,7 +65,7 @@ export default class Start extends React.Component {
               <input className = "buttInput" type = "number" placeholder = "Level to Win"></input>
             </div>
           </body>
-          <AddPlayerModal  title = {"Player Names"} showModal = {this.state.showModal} close = {() => this.handleButtonTogglePlayerModal(false)}/>
+          <AddPlayerModal title = {"Player Names"} showModal = {this.state.showModal} close = {() => this.handleButtonTogglePlayerModal(false)}/>
         </div>
       );
     }

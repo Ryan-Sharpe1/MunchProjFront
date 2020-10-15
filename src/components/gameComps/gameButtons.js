@@ -6,11 +6,14 @@ class GameButtons extends Component {
     render() {
         return(
             <div>
-                <Button className = 'lootRoomButt'>
+                <Button className = 'lootRoomButt' style={{visibility:'hidden'}}>
                     <Button.Content visible>Loot the Room</Button.Content>
                 </Button>
-                <Button className = 'troubleButt'>
+                <Button className = 'troubleButt' style={{visibility:'hidden'}}>
                     <Button.Content visible>Look  For Trouble</Button.Content>
+                </Button>
+                <Button className = 'nextTurn'>
+                    <Button.Content visible>Next Turn</Button.Content>
                 </Button>
             </div>
         );

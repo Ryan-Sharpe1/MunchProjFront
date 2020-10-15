@@ -18,8 +18,8 @@ function Game() {
         </head>
         <body className = "gameBackground">
           <h1 className = "glow inGameHeading">Munchkin</h1>
-          <h1 className = "glow playerLevel">Level - 20</h1>
-          <h1 className = "glow gearScore">Combat <br/> Strength</h1>
+          <h1 className = "glow playerLevel">Player Name <br/> Level - 20</h1>
+          <h1 className = "glow gearScore">Combat <br/> Strength <br/>9001</h1>
           <ArmourSet/>
           <PlayerHand/>
           <GameButtons/>
