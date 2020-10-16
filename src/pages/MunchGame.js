@@ -7,7 +7,10 @@ import ArmourSet from '../components/gameComps/armourSet'
 import PlayerHand from '../components/gameComps/playerHand'
 import GameButtons from '../components/gameComps/gameButtons'
 
-function Game() {
+export default class Game extends React.Component {
+  
+  render(){
+
     return (
       <div className = "container">
         <head>
@@ -29,4 +32,6 @@ function Game() {
     );
   }
   
-  export default Game;
+  }
+  
+  

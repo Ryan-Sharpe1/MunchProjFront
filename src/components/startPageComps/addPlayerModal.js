@@ -44,7 +44,7 @@ class AddPlayerModal extends Component {
   postPlayers = async () => {
     for (let i = 0; i < this.state.playerNumber; i++) {
       var player = document.getElementById(i).value;
-      await fetch("http://localhost:4000/post", {
+      await fetch("http://localhost:4000/player/addPlayer", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
