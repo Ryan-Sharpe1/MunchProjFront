@@ -9,17 +9,34 @@ import "../css/munchGame.css";
 export default class Start extends React.Component {
   constructor() {
     super();
-    this.state = {
-      //this.state represent the rendered values, i.e. what’s currently on the screen
-      gamePage: false,
-    };
-  }
-
-  startGame = () => {
-    this.setState({
-      gamePage:true
+    if(sessionStorage.getItem('reload')){
+      this.state = {
+        gamePage: true
+      };
     }
-    )
+    else {
+      this.state = {
+        
+        gamePage: false
+      };
+    }
+    }
+  
+
+  startGame = async () => {
+    
+    await fetch('http://localhost:4000/player/allPlayerNames')
+    .then((response) => response.json())
+     .then((data) => {
+       var count = data.length
+       sessionStorage.setItem('playerCount',data.length)
+       for(var i=0; i<count;i++){
+         sessionStorage.setItem('player'+ (i+1), data[i])
+       }
+     })
+    await this.setState({
+      gamePage:true,
+    })
   }
 
   handleButtonTogglePlayerModal = (toggle) => {
